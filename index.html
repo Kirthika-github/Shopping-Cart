@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    
+<header>
+    <!--Nav starts here-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo/logo2.png" alt="Electronic Shop logo" width="300" height="300">
+            </a>
+            <div>
+                <div>
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2">
+                        <img src="./images/categories/headphones.jpg" alt="Headphones & Earphones" width="300"
+                            height="240">
+
+                        <img src="./images/categories/computerAccessories.jpg" alt="Computer & Laptop Accessories"
+                            width="300" height="240">
+
+                        <img src="./images/categories/mobileAccessories.jpg" alt="Mobile & Tablet Accessories"
+                            width="300" height="240">
+
+                        <img src="./images/categories/speakers.jpg" alt="Speakers" width="300" height="240">
+
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#headphones">Headphones & Earphones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#computers">Computer & Laptop Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mobiles">Mobile & Tablet Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#speakers">Speakers</a>
+                        </li>
+                        <li>
+                            <button id="viewCartButton" type="submit"><a href="#viewCart"><img src="/images/bag-heart-fill.svg" alt="Add to cart" width="30" height="24">View Cart</a></button>            
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav ends here-->
+
+</header>
+
+<main>
+
+    <!--Headphone Section opens here-->
+    <section id="headphones" style="margin: 50px 50px; ">
+        <div class="container">
+
+            <div class="heading">
+                <h4>Headphones & Earphones</h4>
+            </div>
+
+            <div class="row">
+
+                <!--card layouts starts-->
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/headphones/Bluetooth On-Ear Headphones_$25_5S.jpg" class="card-img-top img"
+                            alt="Bluetooth On-Ear Headphones $25">
+                        <div class="card-body">
+                            <h5 id ="headphoneItem1Name" class="card-title text-success">Bluetooth On-Ear</h5>
+                            <h5 id ="headphoneItem1Price" class="card-text text-danger">$ 25</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="headphoneItem1Quantity"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button id ="addHeadphoneItem1" class="btn btn-primary" type="submit">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/headphones/Classic Style Lightning Earphones - Black_$20_5S.jpg"
+                            class="card-img-top img" alt="Classic Style Lightning Earphones $20">
+                        <div class="card-body">
+                            <h5 id="headphoneItem2Name" class="card-title text-success">Classic Style Earphones</h5>
+                            <h5 id ="headphoneItem2Price" class="card-text text-danger">$ 20</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="headphoneItem2Quantity"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button id ="addHeadphoneItem2" class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/headphones/On-Ear Wired Headphones - Blue_$15_4S.jpg"
+                            class="card-img-top img" alt="On-Ear Wired Headphones $15">
+                        <div class="card-body">
+                            <h5 id="headphoneItem3Name" class="card-title text-success">On-Ear Wired</h5>
+                            <h5 id ="headphoneItem3Price" class="card-text text-danger">$ 15</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="headphoneItem3Quantity"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button id ="addHeadphoneItem3" class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/headphones/True Wireless Earbuds - Black_$15_4S.jpg" class="card-img-top img"
+                            alt="True Wireless Earbuds $15">
+                        <div class="card-body">
+                            <h5 id="headphoneItem4Name" class="card-title text-success">True Wireless Earbuds</h5>
+                            <h5 id ="headphoneItem4Price" class="card-text text-danger">$ 15</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="headphoneItem4Quantity"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button id ="addHeadphoneItem4" class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card layouts ends-->
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--Headphone Section ends here-->
+
+    <!--Computer Section opens here-->
+    <section id="computers" style="margin: 50px 50px; ">
+        <div class="container">
+
+            <div class="heading">
+                <h4>Computer & Laptop Accessories</h4>
+            </div>
+
+            <div class="row">
+
+                <!--card layouts starts-->
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/computerLaptop_accessories/14in Laptop Sleeve - Black_$10_4S.jpg"
+                            class="card-img-top img" alt="14inches Laptop Sleeve Black $10">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">14in Laptop Sleeve - Black</h5>
+                            <h5 class="card-text text-danger">$ 10</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/computerLaptop_accessories/Verbatim V3 USB Drive - Green, 64GB_19$_5S.jpg"
+                            class="card-img-top img" alt="V3 USB Drive">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">V3 USB Drive</h5>
+                            <h5 class="card-text text-danger">$ 19</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/computerLaptop_accessories/Logitech M185 Wireless Mouse - Grey_$19_5S.jpg"
+                            class="card-img-top img" alt="Logitech M185 Wireless Mouse $19">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Logitech Wireless Mouse</h5>
+                            <h5 class="card-text text-danger">$ 19</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/computerLaptop_accessories/Multimedia Keyboard_$7_4S.jpg"
+                            class="card-img-top img" alt="Multimedia Keyboard $7">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Multimedia Keyboard</h5>
+                            <h5 class="card-text text-danger">$ 7</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card layouts ends-->
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--Computer Section ends here-->
+
+    <!--Mobile Section opens here-->
+    <section id="mobiles" style="margin: 50px 50px; ">
+        <div class="container">
+
+            <div class="heading">
+                <h4>Mobile & Tablet Accessories</h4>
+            </div>
+
+            <div class="row">
+
+                <!--card layouts starts-->
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/mobilesTablets_accessories/1.2m Crest USB-A To MFI Lightning Round PVC Cable - Pink_$10_3S.jpg"
+                            class="card-img-top img" alt="1.2m Crest USB-A To MFI Lightning Round PVC Cable - Pink $10">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">USB-A To MFI - Pink</h5>
+                            <h5 class="card-text text-danger">$ 10</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/mobilesTablets_accessories/2-in-1 Wireless Charger_$20_4S.jpg"
+                            class="card-img-top img" alt="2-in-1 Wireless Charger $20">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">2-in-1 Wireless Charger</h5>
+                            <h5 class="card-text text-danger">$ 20</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/mobilesTablets_accessories/Bumper Case for iPad 9in_$12_5S.jpg"
+                            class="card-img-top img" alt="Bumper Case - iPad 9inch $12">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Bumper Case - iPad 9inch</h5>
+                            <h5 class="card-text text-danger">$ 12</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/mobilesTablets_accessories/iPhone 11 Pro Silicone Case - Rainbow_$3_4S.jpg"
+                            class="card-img-top img" alt="iPhone 11 Pro Silicone Case $3">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">iPhone 11 Pro Silicone Case</h5>
+                            <h5 class="card-text text-danger">$ 3</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card layouts ends-->
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--Mobile Section ends here-->
+
+    <!--Speaker Section opens here-->
+    <section id="speakers" style="margin: 50px 50px; ">
+        <div class="container">
+
+            <div class="heading">
+                <h4>Speakers</h4>
+            </div>
+
+            <div class="row">
+
+                <!--card layouts starts-->
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/speakers/Bluetooth Portable Light Up Party Speaker - Black_$79_5S.jpg"
+                            class="card-img-top img" alt="Bluetooth Portable Light Up Party Speaker - Black $79">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Bluetooth Portable Speaker</h5>
+                            <h5 class="card-text text-danger">$ 79</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/speakers/Buddy Bluetooth Portable Speaker - Blue_15$_5S.jpg"
+                            class="card-img-top img" alt="Buddy Bluetooth Portable Speaker $15">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Buddy Bluetooth Speaker</h5>
+                            <h5 class="card-text text-danger">$ 15</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/speakers/CD Boombox_$29_4S.jpg" class="card-img-top img"
+                            alt="CD Boombox $29">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">CD Boombox</h5>
+                            <h5 class="card-text text-danger">$ 29</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card btn" style="width: 18rem;">
+                        <img src="./images/speakers/Google Nest Audio - Charcoal_$149_4S.jpg" class="card-img-top img"
+                            alt="Google Nest Audio $149">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Google Nest Audio</h5>
+                            <h5 class="card-text text-danger">$ 149</h5>
+                            <div class="input-group">
+                                <select class="form-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="1">Quantity: 1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4+</option>
+                                </select>
+                                <button class="btn btn-primary" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card layouts ends-->
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--Speaker Section ends here-->
+
+<!--View Cart Section opens here-->
+<section id="viewCart" style="margin: 50px 50px; ">
+    <div>
+        <h3>Your Cart:</h3>
+        <!-- Loads empty cart -->
+        <div id="cart-list">
+
+        </div>
+    </div>
+
+</section>
+<!--View Card Section ends here-->
+
+</main>
+<script src="/js/ShoppingCart.js"></script>
+<script src="/js/index.js"></script>
+
+</body>
+</html>
