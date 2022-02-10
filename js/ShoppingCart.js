@@ -78,10 +78,10 @@ class ShoppingCart{
         </thead>
         <tbody>
         <tr>
-               <th scope="row"></th>
-               <td></td>
-               <td></td>
-               <td></td>
+               <th scope="row">-----------------------------</th>
+               <td>-----------------------------:</td>
+               <td>-----------------------------:</td>
+               <td>-----------------------------:</td>
              </tr>`;
 
     cartHtmlList.push(cartTitle);
