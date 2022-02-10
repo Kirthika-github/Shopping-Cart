@@ -1,7 +1,7 @@
 //creates an instance of the ShoppingCart class
 const shoppingCart = new ShoppingCart(0);
 //makes sure the cart is displayed with correct details
-shoppingCart.render();
+//shoppingCart.render();
 
 //NOTE: handles just first item from shopping webpage for now. 
 //will be implementing this functionality to all the other items using class list 
